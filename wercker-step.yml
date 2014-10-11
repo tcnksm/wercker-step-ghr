@@ -1,0 +1,20 @@
+name: ghr
+version: 0.1.1
+description: Wercker step for tcnksm/ghr create Github Release and uploading artifacts
+kyewords:
+  - github
+  - release
+properties:
+    token:
+      type: string
+      required: true
+    version:
+      type: string
+    owner:
+      type: string
+    pre_release:
+      type: string
+    replace:
+      type: string
+    opt:
+      type: string
