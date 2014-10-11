@@ -3,7 +3,7 @@ Wercker step ghr [![MIT License](http://img.shields.io/badge/license-MIT-blue.sv
 
 [![wercker status](https://app.wercker.com/status/8e4b61d9c3fa9c2f3a41eac9569f21eb/m "wercker status")](https://app.wercker.com/project/bykey/8e4b61d9c3fa9c2f3a41eac9569f21eb)
 
-This is [wercker](http://wercker.com/) step for [tcnksm/ghr](https://github.com/tcnksm/ghr), create [Github Release](https://help.github.com/articles/creating-releases/) and uploading files there. 
+This is [wercker](http://wercker.com/) deploy step for [tcnksm/ghr](https://github.com/tcnksm/ghr), create [Github Release](https://help.github.com/articles/creating-releases/) and uploading artifacts there. 
 
 ## Usage
 
@@ -16,7 +16,7 @@ steps:
      input: dist
 ```
 
-To use this step, you need to set `$GITHUB_TOKEN` and `input` directory. About `$GITHUB_TOKEN` see at [Github Token](https://github.com/tcnksm/wercker-step-ghr#github-token) section. `input` directory is where your artifacts you want to upload are in and it's relative path from `${WERCKER_SOURCE_DIR}`. 
+To use this step, you need to set `$GITHUB_TOKEN` and `input` directory. About `$GITHUB_TOKEN` see at [Github Token](https://github.com/tcnksm/wercker-step-ghr#github-token) section. `input` directory is where your artifacts you want to upload are in and it would be in `${WERCKER_OUTPUT_DIR}` passed from build step.
 
 ## Options
 

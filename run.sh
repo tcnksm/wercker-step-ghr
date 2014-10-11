@@ -25,7 +25,7 @@ fi
 # If not version is not supplied,
 # we use `pre-release` tag and relase as prelesease on Github Release
 if [ -z "${VERSION}" ]; then
-    info "no version was supplied; using `pre-release` as version"
+    info "no version was supplied; using pre-release as version"
     VERSION="pre-release"
     OPT="${OPT} --prerelease"
 fi
@@ -34,6 +34,7 @@ OWNER=${OWNER:-$WERCKER_GIT_OWNER}
 
 ghr \
     -t ${GITHUB_TOKEN} \
+    -r ${WERCKER_GIT_REPOSITORY} \
     -u ${OWNER} \
     ${OPT} \
-    ${VERSION} pkg/dist/
+    ${VERSION} ${INPUT}
