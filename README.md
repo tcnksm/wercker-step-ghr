@@ -34,6 +34,7 @@ steps:
 
 ## Example
 
+See [tcnksm-sample/wercker-golang](https://github.com/tcnksm-sample/wercker-golang). This simple golang repository is continuously cross-compiled and relase as `pre-prerelease`, you can always provide new builds to user. 
 
 ## GitHub token
 
