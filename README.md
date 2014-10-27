@@ -12,8 +12,8 @@ In the `wercker.yml` of your application use the following step definition:
 ```yaml
 steps:
    - tcnksm/ghr:
-     token: $GITHUB_TOKEN
-     input: dist
+       token: $GITHUB_TOKEN
+       input: dist
 ```
 
 To use this step, you need to set `$GITHUB_TOKEN` and `input` directory. About `$GITHUB_TOKEN` see at [Github Token](https://github.com/tcnksm/wercker-step-ghr#github-token) section. `input` directory is where your artifacts you want to upload are in and it would be in `${WERCKER_OUTPUT_DIR}` passed from build step.
@@ -25,11 +25,11 @@ You can control build with some option from `wercker.yml`:
 ```yaml
 steps:
    - tcnksm/ghr:
-     token: $GITHUB_TOKEN
-     input: dist
-     version: v0.1.0         # Relase tag default is `pre-release`
-     pre_release: true       # Relase as pre-release default is false
-     replace: true           # Replace artifacts if it's already upladed
+       token: $GITHUB_TOKEN
+       input: dist
+       version: v0.1.0         # Relase tag default is `pre-release`
+       pre_release: true       # Relase as pre-release default is false
+       replace: true           # Replace artifacts if it's already upladed
 ```
 
 ## Example
