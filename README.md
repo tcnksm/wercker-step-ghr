@@ -29,7 +29,7 @@ steps:
        input: dist
        version: v0.1.0         # Relase tag default is `pre-release`
        pre_release: true       # Relase as pre-release default is false
-       replace: true           # Replace artifacts if it's already upladed
+       replace: true           # Replace release if it exists
 ```
 
 ## Example
