@@ -1,5 +1,5 @@
 name: ghr
-version: 0.1.7
+version: 0.1.8
 description: Wercker step for tcnksm/ghr create Github Release and uploading artifacts
 kyewords:
   - github
