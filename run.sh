@@ -38,5 +38,6 @@ $WERCKER_STEP_ROOT/bin/ghr \
     -t ${GITHUB_TOKEN} \
     -r ${WERCKER_GIT_REPOSITORY} \
     -u ${OWNER} \
+    --debug \
     ${OPT} \
     ${VERSION} ${INPUT}
