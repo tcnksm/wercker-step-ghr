@@ -1,4 +1,4 @@
-Wercker step ghr [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/tcnksm/wercker-step-ghr/blob/master/LICENCE)
+Wercker step ghr [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tcnksm/wercker-step-ghr/blob/master/LICENCE)
 ====
 
 [![wercker status](https://app.wercker.com/status/8e4b61d9c3fa9c2f3a41eac9569f21eb/m "wercker status")](https://app.wercker.com/project/bykey/8e4b61d9c3fa9c2f3a41eac9569f21eb)
